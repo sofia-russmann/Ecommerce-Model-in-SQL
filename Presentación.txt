@@ -1,0 +1,33 @@
+CHALLENGE: Modelo del negocio y necesidades
+
+• Desarrollo de las tablas:
+La solución que presento está basada en 5 tablas
+1-table customer
+2-table category
+3-table item
+4-table order
+5-table itemEvolution
+La relación de las mismas se entiende a través del modelo entidad-relación presentado.
+
+• Comentarios sobre el desarrollo de las respuestas:
+-Repuesta 3
+La forma en la que está planteada la consigna hizo que imagine 2 escenarios posibles y frente a ellos planteé cada solución.
+Primer escenario: Se realiza la consulta cada día y se desea la información de ese día.
+Segundo escenario: Se realiza la consulta un día y se desea la información de cada día transcurrido.
+En el primero decidí resolverlo a través de un sp que puede ser ejecutado cada día devolviendo así la información por ese día evitando mayor carga de data.
+Y en el segundo decidí resolverlo a través de una consulta que devuelva la información requerida de cada día lo que supone un volumen mayor de data.
+-Respuesta 4
+Decidí resolver a través de parámetros la manipulación de cada mes y año para que pueda ser reutilizado el código.
+-Respuesta 5
+Para este punto consideré ventajoso automatizar el proceso aprovechando la herramienta que se provee a través de Agent SQL Server. 
+Y así programar el script a ejecutar y el momento deseado.
+
+• Aclaraciones: 
+Decidí llevar adelante el diseño y escribir cada consulta en el idioma inglés con el fin de darle cohesión al código.
+El código fue corroborado localmente en una pequeña db con data ficticia que generé para cumplir con las necesidades del negocio.
+Prioricé la limpieza en los archivos de tipo .sql para que destaque el código facilitando la comprensión.
+
+
+Este archivo fue creado para presentar las soluciones pero sobre todo para acercar el proceso que transité para construir las mismas.
+Cualquier corrección o posibilidad de aprendizaje sera bienvenida y agradecida.
+
